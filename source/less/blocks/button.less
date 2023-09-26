@@ -12,4 +12,22 @@
   position: relative;
   cursor: pointer;
   background: linear-gradient(180deg, rgba(2, 0, 36, 0) 40%, rgba(255, 225, 127, 1) 41%, rgba(255, 225, 127, 1) 59%, rgba(156, 191, 155, 0) 60%);
+
+  &:hover {
+    background: @yellow;
+  }
+
+  &:active {
+    background: @yellow-dark;
+  }
+
+  &:focus {
+    outline: 2px solid @purple;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+  }
 }
