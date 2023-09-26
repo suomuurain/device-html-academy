@@ -16,9 +16,125 @@
 
 </head>
 <body class="page">
-  <header>
-
+  <header class="main-header">
+    <div class="container">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo-link" href="#">
+          <img class="main-header__logo-img" src="img/logo-black.svg" width="145" height="36" alt="Логотип «Девайс».">
+        </a>
+        <div class="main-header__user-menu user-menu">
+          <form class="user-menu__search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="user-menu__search-form-label">
+              <span class="visually-hidden">Поиск.</span>
+              <input class="user-menu__search-input" type="search" name="Search" placeholder="Поиск по сайту" required>
+            </label>
+            <button class="user-menu__search-form-button" type="submit">Найти</button>
+          </form>
+          <a class="user-menu__link user-menu__link--login" href="#">Войти</a>
+          <ul class="user-menu__list list">
+            <li class="user-menu__item user-menu__item--compare">
+              <a class="user-menu__link user-menu__link--compare" href="#">Сравнить</a>
+            </li>
+            <li class="user-menu__item user-menu__item--cart">
+              <a class="user-menu__link user-menu__link--cart" href="#">
+                <span class="user-menu__cart-amount">2</span>
+                Корзина
+              </a>
+              <!-- <div class="user-menu__popover popover popover-cart">
+                <div class="popover__content">
+                  <h2 class="popover__title visually-hidden">Корзина</h2>
+                  <ul class="popover__cart-list list">
+                    <li class="popover__cart-item">
+                      <a class="popover__cart-link" href="#">
+                        <img class="popover__cart-image" src="images/product-1.jpg" width="40" height="40" alt="Любительская селфи-палка.">
+                        <p class="popover__cart-title">Любительская<br>селфи-палка</p>
+                      </a>
+                      <button class="popover__cart-button" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" fill="none" viewBox="0 0 10 11"
+                          aria-hidden="true" focusable="false">
+                          <path fill="currentColor"
+                            d="m10 1.076-.91-.91L5 4.259.91.167 0 1.076l4.09 4.09L0 9.259l.91.909L5 6.076l4.09 4.09.91-.908-4.09-4.091L10 1.076Z" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
+                    </li>
+                    <li class="popover__cart-item">
+                      <a class="popover__cart-link" href="#">
+                        <img class="popover__cart-image" src="images/product-2.jpg" width="40" height="40"
+                          alt="Профессиональная селфи-палка.">
+                        <p class="popover__cart-title">Профессиональная<br>селфи-палка</p>
+                      </a>
+                      <button class="popover__cart-button" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" fill="none" viewBox="0 0 10 11"
+                          aria-hidden="true" focusable="false">
+                          <path fill="currentColor"
+                            d="m10 1.076-.91-.91L5 4.259.91.167 0 1.076l4.09 4.09L0 9.259l.91.909L5 6.076l4.09 4.09.91-.908-4.09-4.091L10 1.076Z" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="popover__cart-info">
+                    <p class="popover__cart-info-amount popover__cart-info-description">Товаров: <span class="popover__amount-value">2</span></p>
+                    <p class="popover__cart-info-sum popover__cart-info-description">Сумма: <span class="popover__sum-value">2000 ₽</span></p>
+                  </div>
+                  <a href="#" class="popover__cart-open-button">Открыть корзину</a>
+                </div>
+              </div> -->
+            </li>
+          </ul>
+        </div>
+        <nav class="main-header__navigation navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог товаров</a>
+              <button class="navigation__menu-button" type="button">
+                <span class="visually-hidden">Раскрыть подменю.</span>
+              </button>
+              <div class="navigation__submenu submenu">
+                <ul class="submenu__list list">
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="catalog.html">Моноподы для селфи</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="submenu__list list">
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="submenu__list list">
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="navigation__services-list list">
+            <li class="navigation__services-item">
+              <a class="navigation__services-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation__services-item">
+              <a class="navigation__services-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation__services-item">
+              <a class="navigation__services-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
+
   <main>
     <h1 class="visually-hidden">Интернет-магазин гаджетов и товаров для экшн-съемки.</h1>
     <div class="hero">
@@ -28,7 +144,7 @@
     <div class="categories">
       <div class="container">
         <h2 class="visually-hidden">Категории товаров.</h2>
-        <ul class="categories__list">
+        <ul class="categories__list list">
           <li class="categories__item">
             <a class="categories__link" href="#">
               <span class="categories__img categories__img--vr"></span>
@@ -73,7 +189,7 @@
       <div class="container">
         <h2 class="visually-hidden">Услуги.</h2>
         <div class="services__wrapper">
-          <ul class="services__list-control">
+          <ul class="services__list-control list">
             <li class="services__item-control">
               <a class="services__control services__control--current button" href="#delivery">Доставка</a>
             </li>
@@ -84,7 +200,7 @@
               <a class="services__control button" href="#credit">Кредит</a>
             </li>
           </ul>
-          <ul class="services__list">
+          <ul class="services__list list">
             <li class="services__item">
               <h3 class="services__title" id="delivery">Доставка</h3>
               <p class="services__description">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду
@@ -108,7 +224,7 @@
       </div>
     </div>
 
-    <div class="special ">
+    <div class="special">
       <div class="container">
         <a class="special__link" href="#">Доставим редкий товар под заказ
           <span class="special__link-info">
@@ -135,7 +251,7 @@
             <h2 class="about-us__title">О нас</h2>
             <p class="about-us__description">Огромный выбор гаджетов не оставит равнодушным гика,&nbsp;который есть в каждом из нас.</p>
             <p class="about-us__description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-            <ul class="about-us__list">
+            <ul class="about-us__list list">
               <li class="about-us__item">Меловые линии</li>
               <li class="about-us__item">СДИК</li>
               <li class="about-us__item">ТоксБерри</li>
@@ -151,7 +267,7 @@
               <a class="contacts__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </address>
             <h3 class="contacts__subtitle">Время работы</h3>
-            <ul class="contacts__timetable-list">
+            <ul class="contacts__timetable-list list">
               <li class="contacts__timetable-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts__timetable-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
@@ -201,7 +317,7 @@
     </address>
     <div class="main-footer__footer-nav footer-nav">
       <h3 class="visually-hidden">Навигация.</h3>
-      <ul class="footer-nav__list">
+      <ul class="footer-nav__list list">
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">Доставка</a>
         </li>
@@ -217,7 +333,7 @@
     <span class="main-footer__decor"></span>
     <div class="main-footer__social social">
       <h3 class="visually-hidden">Социальные сети.</h3>
-      <ul class="social__list">
+      <ul class="social__list list">
         <li class="social__item">
           <a href="#" class="social__link">
             <span class="visually-hidden">Телеграм.</span>
