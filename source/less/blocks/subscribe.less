@@ -68,6 +68,31 @@
   border: none;
   border-bottom: 3px solid @border;
   background-color: @light;
+
+  &:hover {
+    background-color: @input-hover;
+  }
+
+  &:focus {
+    outline: 2px solid @purple;
+    outline-offset: 2px;
+  }
+
+  &:invalid {
+    border-bottom: 3px solid @error;
+  }
+
+  &:invalid:placeholder-shown {
+    border-color: @border;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:disabled:hover {
+    background-color: transparent;
+  }
 }
 
 .subscribe__button {
@@ -82,4 +107,30 @@
   letter-spacing: 3.6px;
   text-transform: uppercase;
   border: 3px solid @border;
+
+  &:hover {
+    color: @white;
+    background: @black;
+    border: 3px solid @black;
+  }
+
+  &:active {
+    color: @dark-gray;
+  }
+
+  &:focus {
+    outline: 2px solid @purple;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  &:disabled:hover {
+    color: @black;
+    background-color: transparent;
+    border: 3px solid @border;
+  }
 }
