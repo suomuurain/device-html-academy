@@ -12,6 +12,24 @@
   justify-self: start;
 }
 
+.main-footer__logo-link {
+  &:focus {
+    outline: 2px solid @purple;
+  }
+}
+
+.main-footer__logo-img {
+  color: @yellow-dark;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-footer__address {
   width: 239px;
 }
@@ -26,6 +44,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 125% */
+
+  &:focus {
+    outline: 1px solid @purple;
+    border: none;
+  }
 }
 
 .main-footer__phone {
@@ -39,6 +62,19 @@
   font-weight: 400;
   line-height: 20px; /* 125% */
   text-decoration-line: underline;
+
+  &:focus {
+    outline: 1px solid @purple;
+    border: none;
+  }
+
+  &:hover {
+    color: @yellow-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__decor-wrapper {

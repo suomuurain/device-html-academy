@@ -1,3 +1,24 @@
 .dev-by__logo {
   color: @yellow-dark;
+
+  &:hover {
+    color: @white;
+  }
+
+  &:active {
+    color: @white;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 1px solid @purple;
+    border: none;
+  }
+}
+
+.dev-by__link {
+  &:focus {
+    outline: 1px solid @purple;
+    border: none;
+  }
 }

@@ -16,6 +16,11 @@
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    background-color: @yellow-dark;
+    opacity: 1;
+  }
 }
 
 .social__link {
@@ -23,6 +28,14 @@
   min-width: 40px;
   min-height: 40px;
   position: relative;
+
+  &:focus {
+    outline: 2px solid @purple;
+  }
+}
+
+.social__item:active .social__link {
+  opacity: 0.3;
 }
 
 .social__icon {
