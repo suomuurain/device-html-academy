@@ -6,9 +6,9 @@
   z-index: 1;
   box-sizing: border-box;
   width: 320px;
-  font-family: "Rubik", sans-serif;
-  color: #ffffff;
-  background-color: #000000;
+  font-family: @rubik;
+  color: @white;
+  background-color: @black;
   min-height: 218px;
 
   &:hover {
@@ -48,7 +48,7 @@
   position: relative;
 
   &:not(:last-child) {
-    border-bottom: 1px solid #1a1a1a;
+    border-bottom: 1px solid @light-black;
   }
 }
 
@@ -56,7 +56,7 @@
   width: 250px;
   display: flex;
   flex-wrap: wrap;
-  color: #ffffff;
+  color: @white;
   text-decoration: none;
   position: relative;
 
@@ -69,7 +69,7 @@
     position: absolute;
     width: calc(100% + 2px);
     height: calc(100% + 2px);
-    border: 2px solid #af4fff;
+    border: 2px solid @purple;
     left: -2px;
     top: -2px;
   }
@@ -80,7 +80,7 @@
 }
 
 .popover__cart-title {
-  font-family: "Rubik", sans-serif;
+  font-family: @rubik;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -97,7 +97,7 @@
   }
 
   &:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid @purple;
   }
 }
 
@@ -109,16 +109,16 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  background-color: #1a1a1a;
+  background-color: @light-black;
 }
 
 .popover__cart-info-description {
-  font-family: "Rubik", sans-serif;
+  font-family: @rubik;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: @white;
 }
 
 .popover__cart-button {
@@ -128,7 +128,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: #ffffff;
+  color: @white;
 
   &:hover {
     opacity: 0.6;
@@ -139,7 +139,7 @@
   }
 
   &:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid @purple;
   }
 }
 
@@ -151,17 +151,17 @@
   margin: 20px;
   display: block;
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: @raleway;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #000000;
-  background-color: #ffffff;
+  color: @black;
+  background-color: @white;
 
   &:hover {
-    background-color: #ffe17f;
+    background-color: @yellow;
   }
 
   &:active {
@@ -169,7 +169,7 @@
   }
 
   &:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid @purple;
     outline-offset: 2px;
   }
 }

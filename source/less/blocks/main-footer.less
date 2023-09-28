@@ -3,8 +3,8 @@
   padding: 62px 140px;
   background-color: @dark-gray;
   display: grid;
-  grid-template-columns: 240px 444px 174px;
-  gap: 35px 119px;
+  grid-template-columns: 240px 444px 240px;
+  gap: 26px 119px;
 }
 
 .main-footer__logo {
@@ -17,6 +17,8 @@
 }
 
 .main-footer__address-link {
+  margin: -5px 0 0;
+  padding: 0;
   text-decoration: none;
   color: @white;
   font-family: @rubik;
@@ -27,6 +29,8 @@
 }
 
 .main-footer__phone {
+  margin: 0;
+  padding: 6px 0 0 61px;
   text-decoration: none;
   color: @white;
   font-family: @rubik;
@@ -37,7 +41,13 @@
   text-decoration-line: underline;
 }
 
+.main-footer__decor-wrapper {
+  margin: 17px 0 0;
+  padding: 0;
+}
+
 .main-footer__decor {
+  display: block;
   width: 80px;
   height: 7px;
   background-color: @yellow-dark;

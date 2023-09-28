@@ -1,0 +1,38 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 31px;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  padding-right: 20px;
+  margin-right: 16px;
+  background: url("../img/breadcrumb-arrow.svg") no-repeat right;
+}
+
+.breadcrumbs__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: @black;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @purple;
+  }
+
+  &--current {
+    cursor: default;
+  }
+
+  &--current:hover {
+    opacity: 1;
+  }
+}

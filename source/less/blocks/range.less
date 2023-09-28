@@ -1,0 +1,98 @@
+.range {
+  margin: 0;
+}
+
+.range__scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 8px;
+  background-color: @gray;
+  width: 200px;
+}
+
+.range__bar {
+  position: absolute;
+  height: 2px;
+  background-color: @black;
+}
+
+.range__toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: @light-gray;
+  border: 2px solid @black;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    border-color: @white-active;
+  }
+
+  &:active {
+    background-color: @black;
+    border-color: @black;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border: 2px solid @purple;
+    left: -4px;
+    top: -4px;
+  }
+
+  &--min {
+    top: -8px;
+    left: -8px;
+  }
+
+  &--max {
+    top: -8px;
+    right: -8px;
+  }
+}
+
+.range__inputs-wrapper {
+  display: flex;
+  position: relative;
+  left: -12px;
+  top: 7px;
+}
+
+.range__label {
+  display: flex;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+
+  &:focus-within {
+    outline: 2px solid @purple;
+  }
+}
+
+.range__input {
+  width: 80px;
+  padding: 0 0 0 3px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  appearance: textfield;
+
+  &:focus {
+    outline: none;
+  }
+}

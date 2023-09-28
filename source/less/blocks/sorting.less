@@ -1,0 +1,87 @@
+.sorting {
+  width: 840px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.sorting__title {
+  max-width: 260px;
+  padding: 0;
+  margin: 0;
+  color: @black;
+  font-family: @raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.sorting__select-control {
+  max-width: 300px;
+  padding: 0 30px 0 0;
+  border: none;
+  font-family: @rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: @black;
+  cursor: pointer;
+  background: url("../img/select-arrow.svg") no-repeat right 13px center;
+  appearance: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @purple;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    cursor: pointer;
+    pointer-events: none;
+  }
+}
+
+.sorting__button-wrapper {
+  width: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sorting__button-sort {
+  width: 30px;
+  height: 30px;
+  background: url("../img/sort-icon.svg") no-repeat center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: 2px solid @purple;
+  }
+
+  &--sort-down {
+    transform: rotate(180deg);
+  }
+}

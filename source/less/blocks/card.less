@@ -1,0 +1,84 @@
+.card {
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-within {
+    outline: 2px solid @purple;
+    outline-offset: 2px;
+  }
+
+  &--new::after {
+    content: url("/img/new-icon.svg");
+    position: absolute;
+    top: 27px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.card__link-image {
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.card__image {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.card__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card__title {
+  color: @black;
+  max-width: 225px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: @rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
+  letter-spacing: -0.36px;
+}
+
+.card__price {
+  line-height: 21px;
+  max-width: 100px;
+  color: @dark-gray;
+  text-align: right;
+  font-family: @rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.card__button {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: none;
+
+  &:hover {
+    background: linear-gradient(180deg, rgba(2, 0, 36, 0) 40%, rgba(255, 199, 0, 1) 41%, rgba(255, 199, 0, 1) 59%, rgba(156, 191, 155, 0) 60%);
+  }
+}
+
+.card:hover .card__button {
+  display: block;
+}
