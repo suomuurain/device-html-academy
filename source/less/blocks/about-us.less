@@ -7,6 +7,16 @@
   font-style: normal;
   font-weight: 800;
   line-height: 50px; /* 100% */
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 85px;
+    height: 7px;
+    background-color: @black;
+    position: absolute;
+    top: -48px;
+  }
 }
 
 .about-us__description {
@@ -24,6 +34,34 @@
   list-style-type: none;
   margin: 0 0 30px;
   padding: 0;
+}
+
+.about-us__item {
+  padding: 0 0 0 37px;
+  color: @black;
+  font-family: @rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
+  letter-spacing: -0.36px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: @yellow-dark;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
 }
 
 .about-us__link {

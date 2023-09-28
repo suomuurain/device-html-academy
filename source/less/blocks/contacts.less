@@ -7,6 +7,16 @@
   font-style: normal;
   font-weight: 800;
   line-height: 50px; /* 100% */
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 85px;
+    height: 7px;
+    background-color: @black;
+    position: absolute;
+    top: -48px;
+  }
 }
 
 .contacts__subtitle {
