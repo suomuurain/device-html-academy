@@ -137,7 +137,7 @@
   <main>
     <header class="inner-header">
       <h1 class="inner-header__title">Моноподы для селфи</h1>
-      <ul class="inner-header__breadcrumbs breadcrumbs">
+      <ul class="inner-header__breadcrumbs breadcrumbs list">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
@@ -151,194 +151,199 @@
     </header>
 
     <section class="catalog-products">
-      <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
-      <div class="catalog-products__wrapper">
-        <div class="catalog-products__filter filter">
-          <h3 class="filter__title">Фильтр:</h3>
-          <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter__group filter__group--range">
-              <legend class="filter__name filter__name--range">Стоимость</legend>
-              <div class="filter__range range">
-                <div class="range__scale">
-                  <div class="range__bar" style="left: 0; width: 120px">
-                    <button class="range__toggle toggle--min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range__toggle toggle--max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
+      <div class="container">
+        <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
+        <div class="catalog-products__wrapper">
+          <div class="catalog-products__filter filter">
+            <h3 class="filter__title">Фильтр:</h3>
+            <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="filter__group filter__group--range">
+                <legend class="filter__name filter__name--range">Стоимость</legend>
+                <div class="filter__range range">
+                  <div class="range__scale">
+                    <div class="range__bar" style="left: 0; width: 120px">
+                      <button class="range__toggle range__toggle--min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range__toggle range__toggle--max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="range__inputs-wrapper">
+                    <label class="range__label">
+                      от
+                      <input class="range__input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="range__label">
+                      до
+                      <input class="range__input" type="number" value="5000" name="max-price">
+                    </label>
                   </div>
                 </div>
-                <div class="range__inputs-wrapper">
-                  <label class="range__label">
-                    от
-                    <input class="range__input" type="number" value="0" name="min-price">
-                  </label>
-                  <label class="range__label">
-                    до
-                    <input class="range__input" type="number" value="5000" name="max-price">
-                  </label>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
 
-            <fieldset class="filter__group filter__checkbox checkbox">
-              <legend class="filter__name checkbox__name">Цвет</legend>
-              <ul class="checkbox__list">
-                <li class="checkbox__item">
-                  <label class="checkbox__label-control" for="black">
-                    <input class="checkbox__input visually-hidden" type="checkbox" id="black" name="black" checked>
-                    <span class="checkbox__mark"></span>
-                    <span class="checkbox__label">Черный</span>
-                  </label>
-                </li>
-                <li class="checkbox__item">
-                  <label class="checkbox__label-control" for="white">
-                    <input class="checkbox__input visually-hidden" type="checkbox" id="white" name="white" checked>
-                    <span class="checkbox__mark"></span>
-                    <span class="checkbox__label">Белый</span>
-                  </label>
-                </li>
-                <li class="checkbox__item">
-                  <label class="checkbox__label-control" for="blue" >
-                    <input class="checkbox__input visually-hidden" type="checkbox" id="blue" name="blue">
-                    <span class="checkbox__mark"></span>
-                    <span class="checkbox__label">Синий</span>
-                  </label>
-                </li>
-                <li class="checkbox__item">
-                  <label class="checkbox__label-control" for="red">
-                    <input class="checkbox__input visually-hidden" type="checkbox" id="red" name="red">
-                    <span class="checkbox__mark"></span>
-                    <span class="checkbox__label">Красный</span>
-                  </label>
-                </li>
-                <li class="checkbox__item">
-                  <label class="checkbox__label-control" for="pink">
-                    <input class="checkbox__input visually-hidden" type="checkbox" id="pink" name="pink">
-                    <span class="checkbox__mark"></span>
-                    <span class="checkbox__label">Розовый</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="filter__group filter__checkbox checkbox">
+                <legend class="filter__name checkbox__name">Цвет</legend>
+                <ul class="checkbox__list list">
+                  <li class="checkbox__item">
+                    <label class="checkbox__label-control" for="black">
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="black" name="black" checked>
+                      <span class="checkbox__mark"></span>
+                      <span class="checkbox__label">Черный</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label class="checkbox__label-control" for="white">
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="white" name="white" checked>
+                      <span class="checkbox__mark"></span>
+                      <span class="checkbox__label">Белый</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label class="checkbox__label-control" for="blue" >
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="blue" name="blue">
+                      <span class="checkbox__mark"></span>
+                      <span class="checkbox__label">Синий</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label class="checkbox__label-control" for="red">
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="red" name="red">
+                      <span class="checkbox__mark"></span>
+                      <span class="checkbox__label">Красный</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label class="checkbox__label-control" for="pink">
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="pink" name="pink">
+                      <span class="checkbox__mark"></span>
+                      <span class="checkbox__label">Розовый</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="filter__group filter__radio radio">
-              <legend class="filter__name checkbox__name">Bluetooth</legend>
-              <ul class="radio__list">
-                <li class="radio__item">
-                  <label class="radio__label-control" for="bluetooth-available">
-                    <input class="radio__input visually-hidden" type="radio" id="bluetooth-available" name="bluetooth-group" value="yes" checked>
-                    <span class="radio__mark"></span>
-                    <span class="radio__label">Есть</span>
-                  </label>
-                </li>
-                <li class="radio__item">
-                  <label class="radio__label-control" for="bluetooth-not-available">
-                    <input class="radio__input visually-hidden" type="radio" id="bluetooth-not-available" name="bluetooth-group" value="no">
-                    <span class="radio__mark"></span>
-                    <span class="radio__label">Нет</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button filter__button" type="submit">Показать</button>
-          </form>
-        </div>
-        <div class="catalog-products__sorting sorting">
-          <h3 class="sorting__title filter__name">Сортировка:</h3>
-          <select class="sorting__select-control">
-            <option value="popular">Популярные</option>
-            <option value="cheap">Дешёвое</option>
-            <option value="expensive">Дорогое</option>
-          </select>
-          <div class="sorting__button-wrapper">
-            <button class="sorting__button-sort sorting__button-sort--sort-up" type="button">
-              <span class="visually-hidden">Показать от меньшего к большему.</span>
-            </button>
-            <button class="sorting__button-sort sorting__button-sort--sort-down" type="button">
-              <span class="visually-hidden">Показать от большего к меньшему.</span>
-            </button>
+              <fieldset class="filter__group filter__radio radio">
+                <legend class="filter__name radio__name">Bluetooth</legend>
+                <ul class="radio__list list">
+                  <li class="radio__item">
+                    <label class="radio__label-control" for="bluetooth-available">
+                      <input class="radio__input visually-hidden" type="radio" id="bluetooth-available" name="bluetooth-group" value="yes" checked>
+                      <span class="radio__mark"></span>
+                      <span class="radio__label">Есть</span>
+                    </label>
+                  </li>
+                  <li class="radio__item">
+                    <label class="radio__label-control" for="bluetooth-not-available">
+                      <input class="radio__input visually-hidden" type="radio" id="bluetooth-not-available" name="bluetooth-group" value="no">
+                      <span class="radio__mark"></span>
+                      <span class="radio__label">Нет</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button filter__button" type="submit">Показать</button>
+            </form>
           </div>
-        </div>
 
-        <div class="catalog-products__wrapper">
-          <ul class="catalog-products__list">
-            <li class="catalog-products__card card">
-              <a class="card__link-image" href="#">
-                <picture>
-                  <img class="card__image" src="img/product-1.jpg" width="360" height="380"
-                  alt="Любительская селфи-палка.">
-                </picture>
-                <div class="card__info">
-                  <h3 class="card__title">Любительская<br>селфи-палка</h3>
-                  <b class="card__price">500 ₽</b>
-                </div>
-              </a>
-              <a class="button card__button" href="#">Подробнее</a>
-            </li>
-            <li class="catalog-products__card card">
-              <a class="card__link-image" href="#">
-                <picture>
-                  <img class="card__image" src="img/product-2.jpg" width="360" height="380"
-                  alt="Профессиональная селфи-палка.">
-                </picture>
-                <div class="card__info">
-                  <h3 class="card__title">Профессиональная<br>селфи-палка</h3>
-                  <b class="card__price">1 500 ₽</b>
-                </div>
-              </a>
-              <a class="button card__button" href="#">Подробнее</a>
-            </li>
-            <li class="catalog-products__card card">
-              <a class="card__link-image" href="#">
-                <picture>
-                  <img class="card__image" src="img/product-3.jpg" width="360" height="380"
-                  alt="Непотопляемая селфи-палка.">
-                </picture>
-                <div class="card__info">
-                  <h3 class="card__title">Непотопляемая<br>селфи-палка</h3>
-                  <b class="card__price">2 500 ₽</b>
-                </div>
-              </a>
-              <a class="button card__button" href="#">Подробнее</a>
-            </li>
-            <li class="catalog-products__card card">
-              <a class="card__link-image" href="#">
-                <picture>
-                  <img class="card__image" src="img/product-4.jpg" width="360" height="380"
-                  alt="Селфи-палка «Следуй за мной».">
-                </picture>
-                <div class="card__info">
-                  <h3 class="card__title">Селфи-палка «Следуй за&nbsp;мной»</h3>
-                  <b class="card__price">1 500 ₽</b>
-                </div>
-              </a>
-              <a class="button card__button" href="#">Подробнее</a>
-            </li>
-          </ul>
-          <button class="catalog-products__show-more-button" type="button">Загрузить ещё</button>
+          <div class="catalog-products__products-wrapper">
+            <div class="catalog-products__sorting sorting">
+              <h3 class="sorting__title">Сортировка:</h3>
+              <select class="sorting__select-control">
+                <option value="popular">Популярные</option>
+                <option value="cheap">Дешёвое</option>
+                <option value="expensive">Дорогое</option>
+              </select>
+              <div class="sorting__button-wrapper">
+                <button class="sorting__button-sort sorting__button-sort--sort-up" type="button">
+                  <span class="visually-hidden">Показать от меньшего к большему.</span>
+                </button>
+                <button class="sorting__button-sort sorting__button-sort--sort-down" type="button">
+                  <span class="visually-hidden">Показать от большего к меньшему.</span>
+                </button>
+              </div>
+            </div>
 
-          <div class="catalog-products__pagination pagination">
-            <a class="pagination__button pagination__button--prev pagination__button--disabled">Назад</a>
-            <ul class="pagination__list">
-              <li class="pagination__item">
-                <a class="pagination__link pagination__link--current">1</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">2</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">3</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">...</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">15</a>
-              </li>
-            </ul>
-            <a class="pagination__button pagination__button--next" href="#">Вперёд</a>
+            <div class="catalog-products__inner-wrapper">
+              <ul class="catalog-products__list list">
+                <li class="catalog-products__card card">
+                  <a class="card__link-image" href="#">
+                    <picture>
+                      <img class="card__image" src="img/product-1.jpg" width="360" height="380"
+                      alt="Любительская селфи-палка.">
+                    </picture>
+                    <div class="card__info">
+                      <h3 class="card__title">Любительская<br>селфи-палка</h3>
+                      <b class="card__price">500 ₽</b>
+                    </div>
+                  </a>
+                  <a class="button card__button" href="#">Подробнее</a>
+                </li>
+                <li class="catalog-products__card card card--new">
+                  <a class="card__link-image" href="#">
+                    <picture>
+                      <img class="card__image" src="img/product-2.jpg" width="360" height="380"
+                      alt="Профессиональная селфи-палка.">
+                    </picture>
+                    <div class="card__info">
+                      <h3 class="card__title">Профессиональная<br>селфи-палка</h3>
+                      <b class="card__price">1 500 ₽</b>
+                    </div>
+                  </a>
+                  <a class="button card__button" href="#">Подробнее</a>
+                </li>
+                <li class="catalog-products__card card">
+                  <a class="card__link-image" href="#">
+                    <picture>
+                      <img class="card__image" src="img/product-3.jpg" width="360" height="380"
+                      alt="Непотопляемая селфи-палка.">
+                    </picture>
+                    <div class="card__info">
+                      <h3 class="card__title">Непотопляемая<br>селфи-палка</h3>
+                      <b class="card__price">2 500 ₽</b>
+                    </div>
+                  </a>
+                  <a class="button card__button" href="#">Подробнее</a>
+                </li>
+                <li class="catalog-products__card card">
+                  <a class="card__link-image" href="#">
+                    <picture>
+                      <img class="card__image" src="img/product-4.jpg" width="360" height="380"
+                      alt="Селфи-палка «Следуй за мной».">
+                    </picture>
+                    <div class="card__info">
+                      <h3 class="card__title">Селфи-палка «Следуй за&nbsp;мной»</h3>
+                      <b class="card__price">1 500 ₽</b>
+                    </div>
+                  </a>
+                  <a class="button card__button" href="#">Подробнее</a>
+                </li>
+              </ul>
+              <button class="catalog-products__show-more-button" type="button">Загрузить ещё</button>
+
+              <div class="catalog-products__pagination pagination">
+                <a class="pagination__button pagination__button--prev pagination__button--disabled">Назад</a>
+                <ul class="pagination__list list">
+                  <li class="pagination__item">
+                    <a class="pagination__link pagination__link--current">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">...</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">15</a>
+                  </li>
+                </ul>
+                <a class="pagination__button pagination__button--next" href="#">Вперёд</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -365,7 +370,7 @@
     </address>
     <div class="main-footer__footer-nav footer-nav">
       <h3 class="visually-hidden">Навигация.</h3>
-      <ul class="footer-nav__list">
+      <ul class="footer-nav__list list">
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">Доставка</a>
         </li>
@@ -377,11 +382,13 @@
         </li>
       </ul>
     </div>
-      <a class="main-footer__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-    <span class="main-footer__decor"></span>
+    <a class="main-footer__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+    <div class="main-footer__decor-wrapper">
+      <span class="main-footer__decor"></span>
+    </div>
     <div class="main-footer__social social">
       <h3 class="visually-hidden">Социальные сети.</h3>
-      <ul class="social__list">
+      <ul class="social__list list">
         <li class="social__item">
           <a href="#" class="social__link">
             <span class="visually-hidden">Телеграм.</span>
