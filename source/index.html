@@ -374,6 +374,73 @@
     </div>
   </footer>
 
+  <!-- modal -->
+  <div class="modal-container modal-close">
+    <div class="modal modal--delivery">
+      <button class="modal__close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal__content">
+        <h2 class="modal__title">Доставка под заказ</h2>
+        <form class="modal__delivery-form delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="delivery-form__field-group">
+            <label class="delivery-form__label" for="delivery-name">Ваше имя:</label>
+            <input class="delivery-form__field  delivery-form__field--name" type="text" id="delivery-name"
+              name="delivery-name" placeholder="Введите имя" required>
+          </div>
+          <div class="delivery-form__field-group">
+            <label class="delivery-form__label" for="delivery-email">Ваш e-mail:</label>
+            <input class="delivery-form__field  delivery-form__field--email" type="email" id="delivery-email"
+              name="delivery-email" placeholder="Введите e-mail" value="почта" required>
+            <span class="delivery-form__error-text">Забавный у вас адрес</span>
+          </div>
+          <div class="delivery-form__field-group">
+            <label class="delivery-form__label" for="delivery-comment">Что нужно привезти:</label>
+            <input class="delivery-form__field  delivery-form__field--comment" type="text" id="delivery-comment"
+              name="delivery-comment" placeholder="В свободной форме" required>
+          </div>
+          <div class="delivery-form__field-group">
+            <span class="delivery-form__label">
+              <label class="delivery-form__label" for="delivery-amount">Количество:</label>
+              <span class="delivery-form__tooltip tooltip">
+                <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label-date">
+                  <svg class="tooltip__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                    viewBox="0 0 26 26" aria-hidden="true" focusable="false">
+                    <circle cx="13" cy="13" r="13" fill="#FFE17F" />
+                    <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" />
+                  </svg>
+                </button>
+                <span class="tooltip__text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно.
+                  Привезём сколько получится по требованиям
+                  к&nbsp;провозу багажа.
+                </span>
+              </span>
+            </span>
+            <div class="delivery-form__amount-field-wrapper">
+              <button class="delivery-form__amount-button delivery-form__minus-button" type="button">
+                <span class="visually-hidden">Кнопка минус.</span>
+                <svg class="delivery-form__minus-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="3" fill="currentColor"
+                  viewBox="0 0 16 3" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M16 .787H0v2h16v-2Z" />
+                </svg>
+              </button>
+              <input class="delivery-form__field  delivery-form__field--amount" type="number" id="delivery-amount"
+                name="delivery-amount" placeholder="1" value="1">
+              <button class="delivery-form__amount-button delivery-form__plus-button" type="button">
+                <span class="visually-hidden">Кнопка плюс.</span>
+                <svg class="delivery-form__plus-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
+                  viewBox="0 0 16 17" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M16 7.787H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="button delivery-form__button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>
