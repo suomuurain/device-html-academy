@@ -1,0 +1,50 @@
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px;
+  background-color: @white;
+  border: 10px solid @black;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  &--delivery {
+    width: 920px;
+  }
+}
+
+.modal__close-button {
+  position: absolute;
+  padding: 0;
+  top: 75px;
+  right: 70px;
+  width: 26px;
+  height: 26px;
+  background-color: @white;
+  border: none;
+  background-image: url("../img/close-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @purple;
+    outline-offset: 2px;
+  }
+}
+
+.modal__title {
+  margin: 0 0 42px 0;
+  font-family: @raleway;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: @black;
+}

@@ -1,0 +1,133 @@
+.delivery-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.delivery-form .delivery-form__field-group {
+  margin: 0 0 2px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.delivery-form__label {
+  font-family: @rubik;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: @black;
+  margin-bottom: 14px;
+}
+
+.delivery-form__field {
+  width: 360px;
+  padding: 20px;
+  font-family: @rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: @black;
+  background-color: @light;
+  border: none;
+  box-sizing: border-box;
+
+  &--name {
+    background-image: url("../img/human-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  }
+
+  &--email {
+    background-image: url("../img/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  }
+
+  &--comment {
+    width: 540px;
+    // -webkit-appearance: textfield;
+    appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      // -webkit-appearance: none;
+      appearance: none;
+    }
+  }
+
+  &--amount {
+    width: 60px;
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: @gray;
+  }
+
+  &:focus {
+    outline: 2px solid @purple;
+    outline-offset: 2px;
+  }
+
+  &:invalid {
+    border: 2px solid @error;
+  }
+
+  &:invalid:placeholder-shown {
+    border: none;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
+.delivery-form__field:disabled ~ .delivery-form__error-text {
+  color: @black;
+}
+
+.delivery-form__error-text {
+  font-family: @rubik;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: @error;
+}
+
+.delivery-form__amount-field-wrapper {
+  display: flex;
+}
+
+.delivery-form__amount-button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: @light;
+
+  &:hover {
+    background-color: @light-gray;
+    cursor: pointer;
+  }
+
+  &:hover .delivery-form__plus-icon,
+  &:hover .delivery-form__minus-icon {
+    opacity: 0.6;
+  }
+
+  &:active .delivery-form__plus-icon,
+  &:active .delivery-form__minus-icon {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @purple;
+  }
+}
+
+.delivery-form__button {
+  width: 200px;
+  min-height: 40px;
+  border: none;
+}
