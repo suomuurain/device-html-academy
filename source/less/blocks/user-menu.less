@@ -116,71 +116,71 @@
   color: @black;
   text-decoration: none;
   max-width: 150px;
-}
 
-.user-menu__link--login {
-  padding-left: 28px;
-  background-image: url("../img/login-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 2px center;
+  &--login {
+    padding-left: 28px;
+    background-image: url("../img/login-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 2px center;
 
-  &:hover {
-    opacity: 0.6;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      outline: 2px solid @purple;
+    }
   }
 
-  &:active {
+  &--logout {
     opacity: 0.3;
+
+    &:focus {
+      outline: 2px solid @purple;
+    }
   }
 
-  &:focus {
-    outline: 2px solid @purple;
-  }
-}
+  &--compare {
+    padding-left: 25px;
+    background-image: url("../img/compare-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 2px center;
 
-.user-menu__link--logout {
-  opacity: 0.3;
+    &:hover {
+      opacity: 0.6;
+    }
 
-  &:focus {
-    outline: 2px solid @purple;
-  }
-}
+    &:active {
+      opacity: 0.3;
+    }
 
-.user-menu__link--compare {
-  padding-left: 25px;
-  background-image: url("../img/compare-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 2px center;
-
-  &:hover {
-    opacity: 0.6;
+    &:focus {
+      outline: 2px solid @purple;
+    }
   }
 
-  &:active {
-    opacity: 0.3;
-  }
+  &--cart {
+    padding-left: 45px;
+    position: relative;
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 17px 2px;
 
-  &:focus {
-    outline: 2px solid @purple;
-  }
-}
+    &:hover {
+      opacity: 0.6;
+    }
 
-.user-menu__link--cart {
-  padding-left: 45px;
-  position: relative;
-  background-image: url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 17px 2px;
+    &:active {
+      opacity: 0.3;
+    }
 
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:focus {
-    outline: 2px solid @purple;
+    &:focus {
+      outline: 2px solid @purple;
+    }
   }
 }
 

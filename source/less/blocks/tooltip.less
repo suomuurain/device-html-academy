@@ -25,16 +25,16 @@
   box-sizing: border-box;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
   display: none;
-}
 
-.tooltip__text::before {
-  content: "";
-  background: url("../img/tooltip-arrow.svg") no-repeat center;
-  width: 14px;
-  height: 6px;
-  position: absolute;
-  bottom: 100%;
-  right: 40px;
+  &::before {
+    content: "";
+    background: url("../img/tooltip-arrow.svg") no-repeat center;
+    width: 14px;
+    height: 6px;
+    position: absolute;
+    bottom: 100%;
+    right: 40px;
+  }
 }
 
 .tooltip__toggle:hover + .tooltip__text,
