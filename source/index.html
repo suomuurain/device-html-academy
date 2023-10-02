@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" >
   <link rel="stylesheet" href="css/style.min.css">
 
   <link rel="preload" href="fonts/raleway/Raleway-800.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -135,11 +136,98 @@
 
   <main>
     <h1 class="visually-hidden">Интернет-магазин гаджетов и товаров для экшн-съемки.</h1>
-    <div class="hero">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper__general-wrapper swiper__general-wrapper--quadcopters">
+          <div class="swiper__img-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider-1.webp 1x, img/slider-1@2x.webp 2x">
+              <img class="swiper__img" alt="Квадрокоптер." src="img/slider-1.png" srcset="img/slider-1.png 1x, img/slider-1@2x.png 2x" width="560" height="560">
+            </picture>
+          </div>
+          <div class="swiper__content-wrapper">
+            <h2 class="swiper__title">Порхает как бабочка, жалит как пчела!</h2>
+            <p class="swiper__description">
+              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <a class="swiper__button button" href="#">Подробнее</a>
+            <table class="swiper__wrapper-info">
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr>
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
+              </tr>
+            </table>
+          </div>
+        </div>
 
+        <div class="swiper-slide swiper__general-wrapper swiper__general-wrapper--bracelets">
+          <div class="swiper__img-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider-2.webp 1x, img/slider-2@2x.webp 2x">
+              <img class="swiper__img" alt="Фитнес-браслет." src="img/slider-2.png" srcset="img/slider-2.png 1x, img/slider-2@2x.png 2x" width="560" height="560">
+            </picture>
+          </div>
+          <div class="swiper__content-wrapper">
+            <h2 class="swiper__title">Худеем правильно!</h2>
+            <p class="swiper__description">
+              Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+            </p>
+            <a class="swiper__button button" href="#">Подробнее</a>
+            <table class="swiper__wrapper-info">
+              <tr>
+                <td>48 часов</td>
+              </tr>
+              <tr>
+                <th>Без подзарядки</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper__general-wrapper swiper__general-wrapper--monopods">
+          <div class="swiper__img-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider-3.webp 1x, img/slider-3@2x.webp 2x">
+              <img class="swiper__img" alt="Палка для селфи." src="img/slider-3.png" srcset="img/slider-3.png 1x, img/slider-3@2x.png 2x" width="560" height="560">
+            </picture>
+          </div>
+          <div class="swiper__content-wrapper">
+            <h2 class="swiper__title">Делай селфи, как Бен Стиллер! </h2>
+            <p class="swiper__description">
+              Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+            </p>
+            <a class="swiper__button button" href="#">Подробнее</a>
+            <table class="swiper__wrapper-info">
+              <tr>
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <span class="visually-hidden">Нажать для включения следующего слайда.</span>
+      </div>
+      <div class="swiper-button-prev">
+        <span class="visually-hidden">Нажать для включения предыдущего слайда.</span>
+      </div>
+      <div class="swiper-pagination">
+        <span class="visually-hidden">Навигация по слайдам.</span>
+      </div>
     </div>
 
-    <div class="categories">
+    <section class="categories">
       <div class="container">
         <h2 class="visually-hidden">Категории товаров.</h2>
         <ul class="categories__list list">
@@ -150,7 +238,7 @@
             </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="#">
+            <a class="categories__link" href="catalog.html">
               <span class="categories__img categories__img--monopods"></span>
               Моноподы для селфи
             </a>
@@ -181,37 +269,43 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="services">
+    <section class="services">
       <div class="container">
         <h2 class="visually-hidden">Услуги.</h2>
         <div class="services__wrapper">
           <ul class="services__list-control list">
             <li class="services__item-control">
-              <a class="services__control services__control--current button" href="#delivery">Доставка</a>
+              <a class="services__control services__control--current " href="#delivery">
+                <span>Доставка</span>
+              </a>
             </li>
             <li class="services__item-control">
-              <a class="services__control button" href="#guarantee">Гарантия</a>
+              <a class="services__control " href="#guarantee">
+                <span>Гарантия</span>
+              </a>
             </li>
             <li class="services__item-control">
-              <a class="services__control button" href="#credit">Кредит</a>
+              <a class="services__control " href="#credit">
+                <span>Кредит</span>
+              </a>
             </li>
           </ul>
           <ul class="services__list list">
-            <li class="services__item">
+            <li class="services__item services__item--delivery services__item--current">
               <h3 class="services__title" id="delivery">Доставка</h3>
               <p class="services__description">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду
                 совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.
               </p>
             </li>
-            <li class="services__item">
+            <li class="services__item services__item--guarantee">
               <h3 class="services__title"  id="guarantee">Гарантия</h3>
               <p class="services__description">Если из-за возгорания купленного у&nbsp;нас товара у вас сгорит дом — не
                 переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
               </p>
             </li>
-            <li class="services__item">
+            <li class="services__item services__item--credit">
               <h3 class="services__title"  id="credit">Кредит</h3>
               <p class="services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
                 вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
@@ -220,9 +314,9 @@
           </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="special">
+    <section class="special">
       <div class="container">
         <a class="special__link" href="#">Доставим редкий товар под заказ
           <span class="special__link-info">
@@ -240,9 +334,9 @@
           </span>
         </a>
       </div>
-    </div>
+    </section>
 
-    <div class="info">
+    <section class="info">
       <div class="container">
         <div class="info__wrapper">
           <div class="info__about-us about-us">
@@ -273,9 +367,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="subscribe">
+    <section class="subscribe">
       <div class="container">
         <div class="subscribe__inner-wrapper">
           <h2 class="subscribe__title">Подпишитесь <br> на рассылку</h2>
@@ -292,7 +386,7 @@
           <span class="subscribe__desc">Это бесплатно</span>
         </form>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="main-footer">
@@ -313,7 +407,7 @@
     <address class="main-footer__address">
       <a class="main-footer__address-link" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
     </address>
-    <div class="main-footer__footer-nav footer-nav">
+    <section class="main-footer__footer-nav footer-nav">
       <h3 class="visually-hidden">Навигация.</h3>
       <ul class="footer-nav__list list">
         <li class="footer-nav__item">
@@ -326,12 +420,12 @@
           <a class="footer-nav__link" href="#">Контакты</a>
         </li>
       </ul>
-    </div>
+    </section>
     <a class="main-footer__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
     <div class="main-footer__decor-wrapper">
       <span class="main-footer__decor"></span>
     </div>
-    <div class="main-footer__social social">
+    <section class="main-footer__social social">
       <h3 class="visually-hidden">Социальные сети.</h3>
       <ul class="social__list list">
         <li class="social__item">
@@ -362,7 +456,7 @@
           </a>
         </li>
       </ul>
-    </div>
+    </section>
     <div class="main-footer__dev-by dev-by">
       <h3 class="visually-hidden">Разработано в Html Academy.</h3>
       <a class="dev-by__link" href="https://htmlacademy.ru/" target="_blank">
@@ -375,7 +469,7 @@
   </footer>
 
   <!-- modal -->
-  <div class="modal-container modal-close">
+  <div class="modal-container">
     <div class="modal modal--delivery">
       <button class="modal__close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
@@ -441,6 +535,7 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

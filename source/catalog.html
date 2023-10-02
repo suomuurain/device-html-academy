@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" >
   <link rel="stylesheet" href="css/style.min.css">
 
   <link rel="preload" href="fonts/raleway/Raleway-800.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -18,7 +19,7 @@
 <body class="page">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo-link" href="#">
+      <a class="main-header__logo-link" href="index.html">
         <img class="main-header__logo-img" src="img/logo-black.svg" width="145" height="36" alt="Логотип «Девайс».">
       </a>
       <div class="main-header__user-menu user-menu">
@@ -87,7 +88,7 @@
       <nav class="main-header__navigation navigation">
         <ul class="navigation__list list">
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог товаров</a>
+            <a class="navigation__link navigation__link--active" href="catalog.html">Каталог товаров</a>
             <button class="navigation__menu-button" type="button">
               <span class="visually-hidden">Раскрыть подменю.</span>
             </button>
@@ -97,7 +98,7 @@
                   <a class="submenu__link" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="submenu__item">
-                  <a class="submenu__link" href="catalog.html">Моноподы для селфи</a>
+                  <a class="submenu__link submenu__link--current" href="catalog.html">Моноподы для селфи</a>
                 </li>
                 <li class="submenu__item">
                   <a class="submenu__link" href="#">Экшн-камеры</a>
@@ -368,7 +369,7 @@
     <address class="main-footer__address">
       <a class="main-footer__address-link" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
     </address>
-    <div class="main-footer__footer-nav footer-nav">
+    <section class="main-footer__footer-nav footer-nav">
       <h3 class="visually-hidden">Навигация.</h3>
       <ul class="footer-nav__list list">
         <li class="footer-nav__item">
@@ -381,12 +382,12 @@
           <a class="footer-nav__link" href="#">Контакты</a>
         </li>
       </ul>
-    </div>
+    </section>
     <a class="main-footer__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
     <div class="main-footer__decor-wrapper">
       <span class="main-footer__decor"></span>
     </div>
-    <div class="main-footer__social social">
+    <section class="main-footer__social social">
       <h3 class="visually-hidden">Социальные сети.</h3>
       <ul class="social__list list">
         <li class="social__item">
@@ -417,7 +418,7 @@
           </a>
         </li>
       </ul>
-    </div>
+    </section>
     <div class="main-footer__dev-by dev-by">
       <h3 class="visually-hidden">Разработано в Html Academy.</h3>
       <a class="dev-by__link" href="https://htmlacademy.ru/" target="_blank">
@@ -429,6 +430,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
