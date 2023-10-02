@@ -1,0 +1,10 @@
+<svg class="special__link-info-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="currentColor" viewBox="0 0 2 12" aria-hidden="true" focusable="false" aria-label="Информация.">
+<g fill="#000" clip-path="url(#a)">
+  <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/>
+</g>
+<defs>
+  <clipPath id="a">
+    <path fill="currentColor" d="M0 0h2v12H0z"/>
+  </clipPath>
+</defs>
+</svg>
