@@ -40,18 +40,6 @@
   background: none;
   z-index: 2;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 8px;
-    margin-top: -4px;
-    background-color: @yellow;
-  }
-
   &:hover {
     background-color: @yellow;
   }
@@ -62,19 +50,31 @@
     outline: 2px solid @purple;
   }
 
-  &:hover::before,
-  &:active::before {
-    transform: scaleY(5);
-    outline: none;
-    border: none;
-  }
-
   &:active {
     color: @yellow-dark;
   }
 
-  &:active::before {
-    color: @yellow-dark;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 8px;
+    margin-top: -4px;
+    background-color: @yellow;
+
+    &:hover,
+    &:active {
+      transform: scaleY(5);
+      outline: none;
+      border: none;
+    }
+
+    &:active {
+      color: @yellow-dark;
+    }
   }
 }
 
@@ -98,8 +98,8 @@
   text-align: center;
 }
 
-.services-button-active::before,
-.services-control .button:active::before {
+.services__control--current::before,
+.services__control .button:active::before {
   display: none;
 }
 
